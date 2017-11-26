@@ -1,0 +1,13 @@
+﻿  Fahrzeug.cpp
+  Ping.cpp
+  Schiff.cpp
+  Spiel.cpp
+Spiel.cpp(7): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
+  Spielfeld.cpp
+Spielfeld.cpp(100): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+  Torpedo.cpp
+  Uboot.cpp
+  main.cpp
+  Code wird generiert...
+  Spiel in VS.vcxproj -> C:\Users\Auke Swen\Documents\US_FIAE_24\Data\Grundkurs Programmieren\C++\Spiel in VS2015\spiel\Debug\Spiel in VS.exe
+  Spiel in VS.vcxproj -> C:\Users\Auke Swen\Documents\US_FIAE_24\Data\Grundkurs Programmieren\C++\Spiel in VS2015\spiel\Debug\Spiel in VS.pdb (Full PDB)
