@@ -14,6 +14,8 @@ public:
 
 	static void fontSize(short fwSize, short fhSize);
 
+	void curPos(int x, int y);
+
 
 };
 

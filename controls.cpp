@@ -1,7 +1,5 @@
 #include "controls.h"
 
-
-
 controls::controls()
 {
 }
@@ -57,4 +55,18 @@ void controls::fontSize(short fwSize, short fhSize)
 		cout << f_info.dwFontSize.X << endl;
 	}
 	//system("pause");
+}
+
+void controls::curPos(int x, int y)
+{
+	HANDLE hStdout;
+	CONSOLE_SCREEN_BUFFER_INFO csbiInfo;
+	hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
+	CONSOLE_CURSOR_INFO cursor;
+	cursor.dwSize = 10;
+	cursor.bVisible = false;
+	csbiInfo.dwCursorPosition.X = x;
+	csbiInfo.dwCursorPosition.Y = y;
+	SetConsoleCursorPosition(hStdout, csbiInfo.dwCursorPosition);
+	SetConsoleCursorInfo(hStdout, &cursor);
 }
